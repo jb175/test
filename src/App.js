@@ -11,6 +11,7 @@ function App() {
         <a href='https://mabanque.bnpparibas/'>
           <img src={image} alt="Description" style={{ width: '30%'}} /> {/* Adjust width and height as needed */}
         </a>
+        test
         <p>Counter: {count}</p>
         <button onClick={() => setCount(count + 1)}>Increment</button>
       </header>
