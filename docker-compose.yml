@@ -1,0 +1,14 @@
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-react-app
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+    command: nginx -g 'daemon off;'
